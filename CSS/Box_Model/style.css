@@ -1,0 +1,56 @@
+h2,
+#k {
+  border-radius: 20px;
+}
+.java {
+  width: 3rem;
+  border: 3px dashed #be2d2d;
+  background-color: #00ffff;
+  padding: 0.5rem 1rem 0.5rem 0.2rem;
+}
+.sql {
+  width: 4rem;
+  border: 5px solid #104d10;
+  color: #0a860a;
+  background-color: #252424;
+  margin-left: 5rem;
+  padding: 1rem;
+}
+.html {
+  width: 8rem;
+  border: 2px dashed #252424;
+  background-color: #ffff00;
+  margin-left: 10rem;
+  padding: 1rem;
+}
+#k {
+  border: 4px solid #252424;
+  margin-left: 2rem;
+  background-color: #eee8aa;
+  width: 4rem;
+  padding: 1rem;
+}
+.j2ee {
+  width: 4rem;
+  padding: 1rem;
+  border: #008000 3px solid;
+  background-color: #adff2f;
+  color: #008000;
+  margin-left: 20rem;
+  /*! text-align: center; */
+}
+.js {
+    width: 7rem;
+    padding: 1rem;
+    border: #808080 3px solid;
+    background-color: #ffdab9;
+    color: #4e4b4b;
+    margin-left: 25rem;
+}
+.react {
+    width: 4rem;
+    padding: 1rem;
+  border: 3px solid #252424;
+  background-color: palevioletred;
+  margin-left: 33rem;
+}
