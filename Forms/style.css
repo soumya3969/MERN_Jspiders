@@ -41,7 +41,7 @@ body {
     rgb(255, 191, 0) 89%,
     rgb(255, 234, 0) 100%
   );
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(199, 198, 198, 0.322);
 }
 .container header {
   position: relative;
