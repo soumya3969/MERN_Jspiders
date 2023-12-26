@@ -1,0 +1,25 @@
+*{
+    --green:#75c400;
+    --light-green:#a5d858;
+    --heading:sans-serif;
+}
+form{
+    width: 600px;
+    background: var(--green);
+    padding: 1rem;
+    border-radius: 10px;
+}
+fieldset{
+    border: 2px solid #ffffff;
+    margin: 5px 10px;
+    background: var(--light-green);
+    border-radius: 10px;
+}
+table{
+    width: 100%;
+}
+input{
+    padding: 5px;
+    border: transparent;
+    border-radius: 2px;
+}

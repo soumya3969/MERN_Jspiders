@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td table {
+        margin: 10px 10px;
+      }
+      td {
+        padding: 15px;
+      }
+      tr > th {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2px">
+      <tr>
+        <th rowspan="2">
+          J<br />A<br />V<br />A<br />S<br />C<br />R<br />I<br />P<br />T
+        </th>
+        <th colspan="">MERN</th>
+      </tr>
+      <tr>
+        <td>
+          <table border="2px">
+            <tr>
+              <td>React Js</td>
+              <td>MongoDB</td>
+            </tr>
+            <tr>
+              <td>Expres Js</td>
+              <td>Node JS</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

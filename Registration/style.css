@@ -5,14 +5,18 @@ body{
 }
 h1{
     text-align: center;
-    color: #918b8b;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    background: #2524243b;
+    box-shadow: 10px 5px 10px #252424;
+    border-radius: 15px 0 15px 0;
 }
 fieldset{
     border: 2px black solid;
     border-radius:0 10px 0 10px ;
     margin: 1rem 0;
-    background:#25242477;
+    background:#25242471;
     color: white;
     box-shadow: 10px 10px 10px #252424;
 }
@@ -44,4 +48,6 @@ button:hover{
 
 input,textarea{
     border-radius: 5px;
+    border: #252424 1px solid;
+    box-shadow: 5px 5px 10px #252424;
 }

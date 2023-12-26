@@ -1,0 +1,48 @@
+body{
+    background-color: #252424;
+}
+div{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* animation: beat linear 5s all infinite 0s ; */
+    animation-name:beat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes beat {
+    0%{
+        top: 100px;
+        left:0px;
+        position: relative;
+    }
+    20%{
+        top: 0px;
+        left:100px;
+        position: relative;
+    }
+    40%{
+        top: 100px;
+        left:200px;
+        position: relative;
+    }
+    60%{
+        top: 0px;
+        left:300px;
+        position: relative;
+    }
+    80%{
+        top: 100px;
+        left:400px;
+        position: relative;
+    }
+    100%{
+        top: 0px;
+        left:500px;
+        position: relative;
+    }
+    
+}
