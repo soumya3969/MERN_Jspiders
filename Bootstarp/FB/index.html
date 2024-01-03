@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Log In and Sign up</title>
+    <link rel="stylesheet" href="../bs5.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../Fonts/css/all.min.css" />
+    <link rel="stylesheet" href="../../Fonts/js/all.min.js" />
+    
+  </head>
+  <body>
+    <div class="head  "> 
+      <nav
+        class="container-fluid navbar navbar-dark p-0 pe-5 ps-5"
+        style="background: #3e5893"
+      >
+        <div class="">
+          <a href="#" class="navbar-brand"> <strong>FaceBook</strong> </a>
+        </div>
+        <div class="signin">
+          <form action="">
+            <table>
+              <tr class="text-white">
+                <td><label for="" class="nav-text">Email or phone</label></td>
+                <td><label for="" class="m ms-1">Password</label></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="text" /></td>
+                <td><input type="password" name="" id="" class="m ms-1" /></td>
+                <td>
+                  <input
+                    type="button"
+                    value="Login"
+                    class="btn btn-primary btn-sm"
+                  />
+                </td>
+              </tr>
+              <tr class="text-white">
+                <td></td>
+                <td>forgot password?</td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="body bg-light">
+      <div class="row p-5">
+        <div class="col-6 p-3">
+          <p class="h4 m-2">
+            Connect with friends and the <br />
+            world around you on Facebook.
+          </p>
+          <ul class="l list-unstyled m-2">
+            <li class="c text-secondary p-2">
+              <i class="fa-regular fa-file-lines display-6"> </i>
+              <span class="t text-dark h6">See Photos and Updates</span> from
+              friends in News Feed
+            </li>
+            <li class="c text-secondary p-2">
+              <i class="fa-solid fa-sitemap display-6"> </i>
+              <span class="t text-dark h6">Share what's new</span>
+              in your life on your Timeline
+            </li>
+            <li class="c text-secondary p-2">
+              <i class="fa-solid fa-diagram-project display-6"> </i>
+              <span class="t text-dark h6">Find more</span>
+              of what you're looking for with Facebook Search.0
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <form>
+            <div class="f form-group">
+              <h5 class="h2">Sign Up</h5>
+              <p class="h6 text-sm">It's quick and easy.</p>
+
+              <div class="mt-2 d-flex form-group">
+                <div class="form-group form-floating m-0">
+                  <input
+                    type="text"
+                    class="c form-control me-1"
+                    placeholder="Enter FirstName"
+                    id="firstName"
+                  />
+                  <label for="firstName"> Enter FirstName</label>
+                </div>
+                <div class="form-group form-floating m-0">
+                  <input
+                    type="text"
+                    class="c form-control ms-1"
+                    placeholder="Enter LastName"
+                    id="lastName"
+                  />
+                  <label for="lastName">Enter LastName</label>
+                </div>
+              </div>
+
+              <div class="mt-2 form-group form-floating">
+                <input
+                  type="text"
+                  class="c form-control"
+                  placeholder="Enter Your Email address"
+                  id="email"
+                />
+                <label for="email">Mobile Number or Email address</label>
+              </div>
+              <div class="mt-2 form-group form-floating">
+                <input
+                  type="password"
+                  class="c form-control"
+                  placeholder="Create a Password"
+                  id="psw"
+                />
+                <label for="psw">New Password</label>
+              </div>
+
+              <div class="mt-2 form-group">
+                <h6>Birthday</h6>
+                <!-- <input
+                  type="date"
+                  class="c form-control"
+                  placeholder="select date"
+                /> -->
+                <select name="date" id="" >
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option value="">Jun</option>
+                    <option value="">July</option>
+                    <option value="">Aug</option>
+                    <option value="">Sept</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+              </div>
+              <div class="mt-2 form-group">
+                <h6>Gender</h6>
+                <div class="radio d-flex gap-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="g1"
+                      class="f form-check-input"
+                    />
+                    <label for="g1" class="f form-check-label">Male</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="g2"
+                      class="f form-check-input"
+                    />
+                    <label for="g2" class="f form-check-label">Female</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="g3"
+                      class="f form-check-input"
+                    />
+                    <label for="g3" class="f form-check-label">Custom</label>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-2 form-group">
+                <p class="f form-control-sm">
+                  By clicking Sign Up. You are agree to our Terms,<span class="text-primary"
+                    > Data Policy</span
+                  >and <span class="t text-primary">Coolies Policy</span>. You may receive SMS
+                  Notifications from us and can opt out anytime.
+                </p>
+              </div>
+              <input type="button" value="Sign Up" class="btn btn-success" />
+            </div>
+          </form>
+          <hr>
+          <div class="t text-sm-start"><span class="h6" style="color:#3e5893; font-size:small; font-weight:bolder;">Create a Page</span> for a celebrity, brand or buisness.</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+
+
+        <div class="bg-dark text-white">
+            kgafdskgkhfd
+        </div>
+    </div>
+
+    <script src="../bs5.0/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

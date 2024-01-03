@@ -1,18 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../Assets/JS.png" type="image/x-icon" />
     <title>Modals</title>
-    <link rel="stylesheet" href="../bs5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../Fonts/css/all.css">
-</head>
-<body>
-    <div class="container">
-        <nav class="navbar">
+    <link rel="stylesheet" href="../bs5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Fonts/css/all.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-warning navbar-expand-md">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img src="../../Assets/jsp.png" alt="" height="40px" width="100px" />
+        </a>
+        <button
+          class="n navbar-toggler"
+          data-bs-target="#nav-menu"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="d-flex">
+          <button
+            class="btn btn-outline-dark btn-sm m-1"
+            data-bs-target="#signup"
+            data-bs-toggle="modal"
+          >
+            SignUp
+          </button>
+          <button
+            class="btn btn-outline-dark btn-sm m-1"
+            data-bs-target="#login"
+            data-bs-toggle="modal"
+          >
+            SignIn
+          </button>
+        </div>
+      </div>
+    </nav>
 
-        </nav>
+    <!-- !=====MODALS===== -->
+    <!-- ?Signin========================================================================= -->
+    <div class="modal" id="login">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="m modal-content">
+          <div class="m modal-header bg-warning text-center">
+            <a href="#" class="navbar-brand">
+                <img src="../../Assets/jsp.png" alt="" height="40px" width="100px" />
+              </a>
+            <h2>LOGIN HERE</h2>
+            <button
+              type="button"
+              class="btn-close"
+              aria-label="Close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="m modal-body bg-warning">
+            <form>
+              <div class="f form-group">
+                <input
+                  type="text"
+                  class="c form-control"
+                  placeholder="Enter Your Username"
+                />
+              </div>
+              <div class="mt-2 form-group">
+                <input
+                  type="password"
+                  class="c form-control"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="m modal-footer bg-warning">
+            <div class="mt-2 form-group">
+              <input
+                type="submit"
+                value="SUBMIT"
+                class="c btn btn-outline-success"
+              />
+              <input
+                type="reset"
+                value="CANCEL"
+                class="btn btn-outline-danger"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ?Signup ================================= -->
+    <div class="modal" id="signup">
+      <div class="m modal-dialog">
+        <div class="m modal-content">
+          <div class="m modal-header bg-warning text-center">
+            <a href="#" class="navbar-brand">
+                <img src="../../Assets/jsp.png" alt="" height="40px" width="100px" />
+              </a>
+            <h2>REGISTER HERE</h2>
+            <button
+              type="button"
+              class="btn-close"
+              aria-label="Close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="m modal-body bg-warning">
+            <form>
+              <div class="f form-group">
+                <h5 class="m modal-title">Personal Details</h5>
+                <div class="f form-group form-floating">
+                  <input
+                    type="text"
+                    class="c form-control"
+                    placeholder="Enter a Username"
+                    id="username"
+                  />
+                  <label for="username"> Enter a Username</label>
+                </div>
+                <div class="mt-2 d-flex form-group">
+                  <div class="form-group form-floating m-0">
+                    <input
+                      type="text"
+                      class="c form-control me-1"
+                      placeholder="Enter FirstName"
+                      id="firstName"
+                    />
+                    <label for="firstName"> Enter FirstName</label>
+                  </div>
+                  <div class="form-group form-floating">
+                    <input
+                      type="text"
+                      class="c form-control ms-1"
+                      placeholder="Enter LastName"
+                      id="lastName"
+                    />
+                    <label for="lastName">Enter LastName</label>
+                  </div>
+                </div>
+                <div class="mt-2 form-group">
+                  <input
+                    type="date"
+                    class="c form-control"
+                    placeholder="Date Of Birth"
+                    title="Enter Date Of Birth"
+                  />
+                </div>
+                <div class="mt-2 form-group form-floating">
+                  <input
+                    type="email"
+                    class="c form-control"
+                    placeholder="Enter Your Email address"
+                    id="email"
+                  />
+                  <label for="email">Enter Your Email address</label>
+                </div>
+                <div class="mt-2 form-group form-floating">
+                  <input
+                    type="number"
+                    class="c form-control"
+                    placeholder="Enter Your phone Number"
+                    id="phn"
+                  />
+                  <label for="phn">Enter Your phone Number</label>
+                </div>
+                <div class="mt-2 form-group">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Others</option>
+                  </select>
+                </div>
+                <div class="mt-2 form-group form-floating">
+                  <input
+                    type="password"
+                    class="c form-control"
+                    placeholder="Create a Password"
+                    id="psw"
+                  />
+                  <label for="psw">Create a Password</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="m modal-footer bg-warning">
+            <div class="mt-2 form-group">
+              <input
+                type="submit"
+                value="SUBMIT"
+                class="c btn btn-outline-success"
+                data-bs-target="#signUpSucc"
+                data-bs-toggle="modal"
+              />
+              <input
+                type="reset"
+                value="CANCEL"
+                class="btn btn-outline-danger"
+                data-bs-dismiss="modal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="modal fade" id="signUpSucc">
+            <div class="m modal-dialog">
+                <div class="m modal-content">
+                    <div class=" modal-body alert-success alert-dismissible fade show">
+                        <i class="fa-solid fa-circle-check"></i> &nbsp;<strong>Success!</strong> You have been successfully registered.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
     <script src="../bs5.0/js/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>
