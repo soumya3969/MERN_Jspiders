@@ -1,0 +1,7 @@
+.hero{
+    background-color: cyan ;
+    color: #256892;
+}
+h1[name="text"]{
+    border: 5px solid yellow;
+}
