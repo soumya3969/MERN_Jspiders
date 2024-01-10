@@ -1,6 +1,27 @@
+*{
+    border: 1px solid red;
+}
 .container{
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-    gap:5;
+    padding: 1rem;
+    
+    height: 200vh;
+}
+.box{
+    margin: 2px;
+    padding: 2px;
+}
+.absolute{
+    /* position: relative;
+    left: 200px; */
+}
+.fixed{
+    /* position: fixed; */
+}
+.relative{
+    position: relative;
+    
+}
+.sticky{
+    position: sticky;
+    top: 20px;
 }
