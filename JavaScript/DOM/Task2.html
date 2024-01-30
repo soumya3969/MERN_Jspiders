@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+        <link rel="stylesheet" href="../../Bootstarp/bs5.0/css/bootstrap.min.css">
+        <style>
+            .btn{
+                font-size: 20px;
+                font-weight: 800;
+            }
+        </style>
+
+  </head>
+  <body>
+    <h1>
+      Count Value:-
+      <span id="display"></span>
+    </h1>
+    <div >
+        <button class="btn btn-outline-danger pe-5 ps-5" onclick="dec()">-</button>
+      <button class="btn btn-outline-success ps-5 pe-5 " onclick="inc()">+</button>
+    </div>
+    <!-- ! Script Code -->
+    <script>
+      let display = document.getElementById("display");
+      let count = 0;
+      display.textContent = count;
+      function inc() {
+        count++;
+        display.textContent = count;
+      }
+      function dec() {
+        count--;
+        display.textContent = count;
+      }
+    </script>
+    <script src="../../Bootstarp/bs5.0/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="../../Bootstarp/bs5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Fonts/css/all.min.css" />
+    <style>
+      .card {
+        padding-top: 10px;
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+
+        border-radius: 8px;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center">
+          <div class="card">
+            <div class="card-header">
+              <img
+                style="border-radius: 1.5rem; box-shadow: 5px 5px 10px #ffffff"
+                src="./akatsuki.jpg"
+                alt="Akatsuki"
+                class="img-fluid"
+              />
+              <h3 class="text-dark">The Akatsuki</h3>
+              <p>
+                Akatsuki is a group of shinobi that existed outside the usual
+                system of hidden villages. The name Akatsuki literally means
+                "Dawn" or "Daybreak".
+              </p>
+            </div>
+            <div class="card-body d-flex justify-content-evenly">
+              <div class="b-left col-6">
+                <button
+                  class="btn btn-outline-dark btn-md ps-3 pe-3"
+                  onclick="likesCount(),totalCount()"
+                >
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <span id="likes"></span>
+                </button>
+              </div>
+              <div class="b-right col-6">
+                <button
+                  class="btn btn-outline-dark btn-md ps-3 pe-3"
+                  onclick="dislikesCount() ,totalCount()"
+                >
+                  <i class="fa-regular fa-thumbs-down"></i>
+                  <span id="dislikes"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-footer">
+              <h5>Total Clicks = <span id="total"></span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../Bootstarp/bs5.0/js/bootstrap.bundle.js"></script>
+    <script src="../../Fonts/js/all.min.js"></script>
+    <script>
+      let likes = document.getElementById("likes");
+      let dislikes = document.getElementById("dislikes");
+      let totals = document.getElementById("total");
+      let like = 0;
+      let dislike = 0;
+      let total = 0;
+      likes.textContent = like;
+      dislikes.textContent = dislike;
+      totals.textContent = total;
+
+      //   Counting------------------------------
+      function likesCount() {
+        like++;
+        likes.textContent = like;
+      }
+      function dislikesCount() {
+        dislike++;
+        dislikes.textContent = dislike;
+      }
+      function totalCount() {
+        total = like + dislike;
+        totals.textContent = total;
+      }
+    </script>
+  </body>
+</html>

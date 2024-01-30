@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object MOdel</title>
+  </head>
+  <body>
+    <h1 id="header">Header One</h1>
+    <p>
+      Visit Flipkart
+      <a href="https://flipkart.com">Click Here</a>
+    </p>
+    <div>
+      <h2 class="one">Header One</h2>
+      <h2>Header Two</h2>
+      <h2 class="one">Header Three</h2>
+    </div>
+
+    <!-- !Script Code -->
+    <script>
+      let htmlFile = document;
+      console.log(htmlFile);
+      let headTag = document.head;
+      console.log(headTag);
+      let bodyTag = document.body;
+      console.log(bodyTag);
+
+      let headerTag = document.h1;
+      console.log(headerTag); //undefined
+
+      // DOM Methods
+
+      let h1Tag = document.getElementById("header");
+      console.log(h1Tag);
+      let h1Text = h1Tag.textContent;
+      console.log(h1Text);
+
+      let h2TagClass = document.getElementsByClassName("one");
+      console.log(h2TagClass);
+      
+      let h2Tag=document.getElementsByTagName('h2')
+      console.log(h2Tag);
+      let h1Head= document.getElementById("header");
+      console.log(h1Tag);
+      let h1HeadText = h1Tag.textContent;
+      console.log(h1Text);
+    </script>
+  </body>
+</html>
