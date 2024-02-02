@@ -1,28 +1,28 @@
 let product1 = {
   id: "AA101",
-  img: "./assets/watch1.jpg",
+  img: "./assets/watch1.png",
   name: "Apple Watch",
   price: 41900.0,
   qty: 1
 };
 let product2 = {
   id: "AA102",
-  img: "./assets/airpods.jpg",
-  name: "Apple Airpods Pro",
+  img: "./assets/airpods.png",
+  name: "Apple Airpods",
   price: 24900.0,
   qty: 1
 };
 let product3 = {
   id: "AA103",
-  img: "./assets/macmini.jpg",
+  img: "./assets/macmini.png",
   name: "Apple Mac Mini",
   price: 59900.0,
   qty: 1
 };
 let product4 = {
   id: "AA104",
-  img: "./assets/iphone15.jpg",
-  name: "Apple Iphone 15",
+  img: "./assets/iphone15.png",
+  name: "Apple Iphone15",
   price: 102999.0,
   qty: 1
 };
@@ -33,21 +33,29 @@ let product5 = {
   price: 399900.0,
   qty: 1
 };
+let product6 = {
+  id: "AA106",
+  img: "./assets/homepod.png",
+  name: "Apple Ipad",
+  price: 399900.0,
+  qty: 1
+};
 
 // !display Product
 let ProductList = [];
-ProductList.push(product1, product2, product3,product4,product5);
+ProductList.push(product1, product2, product3,product4,product5,product6);
 
 function displayProduct(data) {
   let item = `
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
-          <div class="card" style='background: #97cba975;'>
+          <div class="card  mt-1 mb-1" style='background: #97cba975;'>
             <div class="card-body d-flex justify-content-evenly gap-2">
               <div class="b-left col-6">
                 <img
                   style="
                     border-radius: 1.5rem;
-                    box-shadow: 5px 5px 10px #ffffff;
+                    // box-shadow: 5px 5px 10px #ffffff;
+                    filter: drop-shadow(5px 5px 10px #e84a5f);
                   "
                   src="${data.img}"
                   alt="${data.id}"
