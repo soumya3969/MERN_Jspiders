@@ -19,16 +19,30 @@ let product3 = {
   price: 59900.0,
   qty: 1
 };
+let product4 = {
+  id: "AA104",
+  img: "./assets/iphone15.jpg",
+  name: "Apple Iphone 15",
+  price: 102999.0,
+  qty: 1
+};
+let product5 = {
+  id: "AA105",
+  img: "./assets/ipad.png",
+  name: "Apple Ipad",
+  price: 399900.0,
+  qty: 1
+};
 
 // !display Product
 let ProductList = [];
-ProductList.push(product1, product2, product3);
+ProductList.push(product1, product2, product3,product4,product5);
 
 function displayProduct(data) {
   let item = `
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
-          <div class="card">
-            <div class="card-body d-flex justify-content-evenly">
+          <div class="card" style='background: #97cba975;'>
+            <div class="card-body d-flex justify-content-evenly gap-2">
               <div class="b-left col-6">
                 <img
                   style="
@@ -36,12 +50,12 @@ function displayProduct(data) {
                     box-shadow: 5px 5px 10px #ffffff;
                   "
                   src="${data.img}"
-                  alt="Akatsuki"
+                  alt="${data.id}"
                   class="img-fluid"
                 />
               </div>
-              <div class="b-right col-6">
-                <table class="table text-center text-dark">
+              <div class="b-right col-6 m-1">
+                <table class="table text-center text-dark" style='background: #e0ffcd75; border-radius:1rem'>
                   <tr>
                     <th>Id:</th>
                     <td>${data.id}</td>
@@ -103,8 +117,7 @@ function updateTotal(productId) {
   let product = ProductList.find((item) => item.id === productId);
   if (product) {
     let totalValue = Math.trunc(product.qty * product.price);
-    document.getElementById("total-" + productId).textContent =
-      totalValue;
+    document.getElementById("total-" + productId).textContent = totalValue;
   }
 }
 
