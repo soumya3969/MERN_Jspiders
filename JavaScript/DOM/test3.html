@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>hyy</div>
+
+    <script>
+      let product1 = {
+        id: "AA101",
+        img: "./assets/watch1.jpg",
+        name: "Apple Watch",
+        price: 41900.0,
+        qty: 1
+      };
+      let product2 = {
+        id: "AA102",
+        img: "./assets/airpods.jpg",
+        name: "Apple Airpods Pro",
+        price: 24900.0,
+        qty: 1
+      };
+      let product3 = {
+        id: "AA103",
+        img: "./assets/macmini.jpg",
+        name: "Apple Mac Mini",
+        price: 59900.0,
+        qty: 1
+      };
+
+      let arr=[]
+      arr.push(product1,product2,product3)
+      console.log(arr)
+      for (const iterator of arr) {
+        console.log(iterator.name)
+      }
+    </script>
+  </body>
+</html>
