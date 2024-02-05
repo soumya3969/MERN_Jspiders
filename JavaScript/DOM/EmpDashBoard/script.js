@@ -30,7 +30,7 @@ let employee = [
     salary: 16000,
     company: "Jspiders",
     city: "Raipur",
-    state: "CG"
+    state: "Chhatisgarh"
   },
   {
     id: 104,
@@ -39,7 +39,7 @@ let employee = [
     degn: "Manager",
     age: 31,
     salary: 45000,
-    company: "orient",
+    company: "Orient",
     city: "Bangalore",
     state: "Karnataka"
   },
@@ -50,7 +50,7 @@ let employee = [
     degn: "Senior developer",
     age: 23,
     salary: 30000,
-    company: "flipkart",
+    company: "Flipkart",
     city: "Bangalore",
     state: "Karnataka"
   }
