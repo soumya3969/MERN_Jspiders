@@ -35,7 +35,7 @@
           iste! Laborum, voluptatum.
         </p>
       </div>
-      <div class="row d-flex align-content-center justify-content-center" >
+      <div class="row d-flex align-content-center justify-content-center">
         <div class="col-2">
           <input type="text" class="form-control" />
         </div>
@@ -46,35 +46,48 @@
     </section>
     <br />
     <section class="container-fluid">
-        <div class="row d-flex justify-content-evenly">
-            <div class="col-4"><button class="btn btn-dark">All Employee</button></div>
-            <div class="col-4"><button class="btn btn-dark">Male Employee</button></div>
-            <div class="col-4"><button class="btn btn-dark">Female Employee</button></div>
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-4">
+          <button onclick="displayAllEmp(employee);" class="btn btn-dark">
+            All Employee
+          </button>
         </div>
+        <div class="col-4">
+          <button onclick="displayMaleEmp(employee)" class="btn btn-dark">
+            Male Employee
+          </button>
+        </div>
+        <div class="col-4">
+          <button onclick="displayFemaleEmp(employee)" class="btn btn-dark">
+            Female Employee
+          </button>
+        </div>
+      </div>
     </section>
     <br />
     <section>
       <div class="container-fluid">
-        <div class="row" id="details">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body d-flex justify-content-evenly bg-dark text-light">
-                       <h5>Emp ID</h5>
-                       <h5>Emp Name</h5>
-                       <h5>Emp Gender</h5>
-                       <h5>Emp Degn</h5>
-                       <h5>Emp Age</h5>
-                       <h5>Emp Salary</h5>
-                       <h5>Emp Company</h5>
-                       <h5>Emp City</h5>
-                       <h5>Emp State</h5>
-                       </div>
-                    </div>
-                </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div
+                class="card-body d-flex justify-content-evenly bg-dark text-light"
+              >
+                <h5>Emp ID</h5>
+                <h5>Emp Name</h5>
+                <h5>Emp Gender</h5>
+                <h5>Emp Degn</h5>
+                <h5>Emp Age</h5>
+                <h5>Emp Salary</h5>
+                <h5>Emp Company</h5>
+                <h5>Emp City</h5>
+                <h5>Emp State</h5>
+              </div>
             </div>
-           
+          </div>
         </div>
       </div>
+      <div class="row" id="details"></div>
     </section>
 
     <!-- !script code -->
