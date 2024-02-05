@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/users-gear-solid.svg"
+      type="image/x-icon"
+    />
+    <title>|| Employee DashBoard ||</title>
+    <link rel="stylesheet" href="../../../Bootstarp/bs5.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../../Fonts/css/all.min.css" />
+    <style>
+        #hero{
+            display: grid;
+            place-items: center;
+        }
+    </style>
+  </head>
+  <body style="background: #fdffcd">
+    <nav class="navbar navbar-dark" style="background-color: #252424">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <i class="fa-solid fa-users-line pe-2"></i>Employee Dashboard
+        </a>
+      </div>
+    </nav>
+    <section class="container-fluid hero">
+      <div class="content">
+        <h2>Student Details</h2>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+          doloremque quo ab rem veritatis. Laborum atque facilis tenetur est ab
+          tempora rerum sapiente rem, placeat neque ex quae? Expedita ipsa a sit
+          quam, consequatur, quo eum aliquam provident quae illo consectetur
+          molestias. Dolor debitis deleniti voluptatem explicabo laboriosam
+          voluptate doloremque numquam ipsam commodi adipisci ipsum sunt, natus
+          sapiente tempore quidem beatae deserunt error iste autem perferendis
+          suscipit? Sapiente quisquam error ut? Aut cum dicta, harum minus saepe
+          iste! Laborum, voluptatum.
+        </p>
+      </div>
+      </div>
+    </section>
+    <br />
+
+   
+    <!-- !employee details section -->
+
+    <section class="container-fluid mt-4 " >
+        <div class="row "id="hero">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-center">
+                        <h2 class="text-white">Registration Form</h2>
+
+                    </div> 
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" id="fName" placeholder="First Name" class="form-control" value="SOUMYA RANJAN">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" name="" id="LName" placeholder="Last Name" class="form-control" value="MAHANTA">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="email" name="" id="email" placeholder="Email Address" class="form-control" value="ltmhnt@gmail.com">
+                            </div>
+                            <div class="form-group mt-3">
+                                <select name="city" id="city" class="form-control">
+                                    <option class="form-control" value="">Select City</option>
+                                    <option class="form-control" value="bangalore" selected>Bangalore</option>
+                                    <option class="form-control" value="chennai">Chennai</option>
+                                    <option class="form-control" value="pune">Pune</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Select Gender:- </label><br>
+                                <input type="radio" name="gender" class="form-check-input" checked > Male</input>
+                                <input type="radio" name="gender" class="form-check-input" > Female</input>
+                                <input type="radio" name="gender" class="form-check-input" > Other</input>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Tech Skills:- </label><br>
+                                <input type="checkbox" name="skills" class="form-check-input" checked > JavaScript</input>
+                                <input type="checkbox" name="skills" class="form-check-input" checked > React Js</input>
+                                <input type="checkbox" name="skills" class="form-check-input" > Node JS</input>
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" value="Submit" class="btn btn-md btn-dark">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mb-5"></footer>
+   
+    <!-- !script code -->
+    <script src="./script.js"></script>
+    <script src="../../../Bootstarp/bs5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../Fonts/js/all.js"></script>
+  </body>
+</html>
