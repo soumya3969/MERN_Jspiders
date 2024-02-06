@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./favicon.ico"
+      type="image/x-icon"
+    />
+    <title>|| Fees Calculator ||</title>
+    <link rel="stylesheet" href="../../../Bootstarp/bs5.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../../Fonts/css/all.min.css" />
+    <style>
+        body {
+            background-color: #55B95F;
+        }
+
+        #hero {
+            display: grid;
+            place-items: center;
+        }
+
+        .card-body {
+            background-color: #c4ea70;
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" style="background-color: #252424">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <i class="fa-solid fa-calculator pe-2"></i>Fees Calculator
+        </a>
+      </div>
+    </nav>
+    <section class="container-fluid hero">
+      <div class="content text-center">
+       
+      </div>
+    </section>
+    <!-- !fees details section -->
+
+    <section class="container-fluid mt-1 " >
+        <div class="row "id="hero">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-center">
+                        <h2 class="text-white">Fees Calculator</h2>
+
+                    </div> 
+                    <div class="card-body">
+                        <form action="">
+                            
+                            <div class="form-group ">
+                                <label for="courses">Enter Course</label>
+                                <select name="courses" id="courses" class="form-control">
+                                    <option class="form-control" value="" disabled selected>Select Course</option>
+                                    <option class="form-control" value="java" >JAVA</option>
+                                    <option class="form-control" value="mern">MERN</option>
+                                    <option class="form-control" value="python">PYTHON</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="courseFee">Fees </label>
+                                <input type="text" name="" id="courseFee" value="" class="form-control" readonly>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Select Caste:- </label><br>
+                                <input type="radio" name="caste" class="form-check-input" value="GENERAL" > GENERAL</input>
+                                <input type="radio" name="caste" class="form-check-input" value="OBC" > OBC</input>
+                                <input type="radio" name="caste" class="form-check-input" value="SC"> SC</input>
+                                <input type="radio" name="caste" class="form-check-input" value="ST" > ST</input>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="concession">Fee Concession </label>
+                                <input type="text" name="" id="concession" value="" readonly class="form-control">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="paid">Fee Paid </label>
+                                <input type="number" name="" id="paid" value=""  class="form-control paid ">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="due">Due Fee</label>
+                                <input type="text" name="" id="due" value="" readonly class="form-control">
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" value="Calculate" class="btn btn-md btn-dark" id="calculate">Calculate</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mb-5"></footer>
+   
+    <!-- !script code -->
+    <script src="./script.js"></script>
+    <script src="../../../Bootstarp/bs5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../Fonts/js/all.js"></script>
+  </body>
+</html>
