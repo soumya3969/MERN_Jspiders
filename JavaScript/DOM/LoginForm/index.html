@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- !Links -->
+    <link rel="stylesheet" href="../../../Bootstarp/bs5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../Fonts/css/all.min.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <div class="row mt-3">
+            <div class="col-md-5 m-auto">
+                <div class="card rounded">
+                    <div class="card-header text-center bg-dark">
+                        <h2 class="text-white"><i class="fa-solid fa-id-card"></i> Signup Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="" class="form-group" id="signupForm">
+                            <div class="mt2">
+                                <label for="fname">First Name</label>
+                                <span id="fname-error" class="small fw-bolder"></span>
+                                <input type="text" class="form-control" id="fname" name="fname" />
+                            </div>
+                            <div class="mt2">
+                                <label for="lname">Last Name</label>
+                                <span id="lname-error" class="small fw-bolder"></span>
+                                <input type="text" class="form-control" id="lname" name="lname" />
+                            </div>
+                            <div class="mt2">
+                                <label for="email">Email Id <i class="fa-solid fa-at small"></i></label>
+                                <span id="email-error" class="small fw-bolder"></span>
+                                <input type="text" class="form-control" id="email" name="email" />
+                            </div>
+                            <div class="mt2">
+                                <label for="mobile">Mobile Number</label>
+                                <span id="mobile-error" class="small fw-bolder"></span>
+                                <input type="number" class="form-control" id="mobile" name="mobile" />
+                            </div>
+                            <div class="mt2">
+                                <label for="dob">Date Of Birth</label>
+                                <span id="dob-error" class="small fw-bolder"></span>
+                                <input type="date" name="dob" id="dob" class="form-control" />
+                            </div>
+                            <div class="mt2">
+                                <label for="gender">Gender</label>
+                                <span id="gender-error" class="small fw-bolder"></span> <br />
+                                <input type="radio" class="form-check-input" name="gender" value="male" />
+                                <label for="male" class="form-check-label">Male</label>
+                                <input type="radio" class="form-check-input" name="gender" value="female" />
+                                <label for="female" class="form-check-label">Female</label>
+                                <input type="radio" class="form-check-input" name="gender" value="others" />
+                                <label for="others" class="form-check-label">Others</label>
+                            </div>
+                            <div class="mt-2">
+                                <label for="password">Password</label>
+                                <span id="password-error" class="small fw-bolder"></span>
+                                <input type="password" name="password" id="password" class="form-control" />
+                            </div>
+                            <div class="mt-2">
+                                <label for="conPassword">Confirm Password</label>
+                                <span id="conPassword-error" class="small fw-bolder"></span>
+                                <input type="password" name="conPassword" id="conPassword" class="form-control" />
+                            </div>
+                            <div class="mt-2 text-center">
+                                <button class="btn btn-dark" type="reset" value="Reset">
+                                    Reset
+                                </button>
+                                <button class="btn btn-dark" type="submit" value="Submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !scripts -->
+    <script src="./script.js"></script>
+    <script src="../../../Bootstarp/bs5.0/js/bootstrap.bundle.js"></script>
+    <script src="../../../Fonts/js/all.min.js"></script>
+</body>
+
+</html>

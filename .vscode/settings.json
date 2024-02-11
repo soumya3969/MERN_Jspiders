@@ -2,5 +2,6 @@
     "cSpell.words": [
         "automorphic",
         "Karnataka"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
