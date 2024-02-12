@@ -11,13 +11,9 @@ form.addEventListener('click', function(event) {
         const value = target.value;
 
         if (value === '=') {
-            try {
-                const result = eval(expression);
+            const result = eval(expression);
                 display.value = expression + ' = ' + result;
                 expression = result;
-            } catch (error) {
-                display.value = '❌';
-            }
         } else if (value === 'del') {
             display.value = display.value.slice(0, -1);
             expression = display.value;
