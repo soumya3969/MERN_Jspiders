@@ -1,0 +1,32 @@
+<script>
+    let myPromise = new Promise((resolve, reject) => {
+      let age = 20;
+      setTimeout(() => {
+        if (age > 18) {
+        resolve("eligible for voting");
+      } else {
+        reject("not eligible for voting");
+      }
+      }, 3000);
+    });
+    let myPromise2=new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve('You are Adult Now !!!')
+        }, 5000);
+    })
+    console.log("start");
+    console.log(myPromise  )
+    myPromise
+      .then((data) => {
+        console.log(data);
+        myPromise2.then((data)=>{
+            console.log(data)
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      }).finally(()=>{
+          console.log('this is finally method')
+      })
+    console.log("end");
+  </script>

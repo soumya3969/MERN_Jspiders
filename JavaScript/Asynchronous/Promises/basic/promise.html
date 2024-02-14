@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myPromise = new Promise((resolve, reject) => {
+        let age = 10;
+        if (age > 18) {
+          resolve("eligible for voting");
+        } else {
+          reject("not eligible for voting");
+        }
+      });
+      console.log("start");
+      console.log(myPromise  )
+      myPromise
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        }).finally(()=>{
+            console.log('this is finally method')
+        })
+      console.log("end");
+    </script>
+  </body>
+</html>
