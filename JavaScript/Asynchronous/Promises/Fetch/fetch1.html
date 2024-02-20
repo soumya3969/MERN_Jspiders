@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="../../../../Bootstarp/bs5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../../Fonts/css/all.min.css">
+  </head>
+
+  <body>
+    <center>
+      <button id="show-btn" class="btn btn-dark mt-2"><i class="fa-solid fa-user-tie"></i> Show users</button>
+    </center>
+    <div align="center" style="padding: 1rem">
+      <table
+        border="1"
+        cellpadding="20"
+        style="border-collapse: collapse; width: 95vw"
+      >
+        <thead>
+          <tr>
+            <th><i class="fa-solid fa-lightbulb"></i> ID</th>
+            <th><i class="fa-solid fa-user"></i> USERNAME</th>
+            <th><i class="fa-solid fa-fire-flame-curved"></i> NAME</th>
+            <th><i class="fa-solid fa-inbox"></i> EMAIL</th>
+            <th><i class="fa-solid fa-map-location-dot"></i> ADDRESS</i></th>
+          </tr>
+        </thead>
+        <tbody id="t-data"></tbody>
+      </table>
+    </div>
+    <script>
+      let url = "https://dummyjson.com/users";
+
+      let showButton = document.getElementById("show-btn");
+      showButton.addEventListener("click", () => {
+        fetch(url)
+          .then((res) => res.json())
+          .then((data) => showTable(data.users))
+          .catch((error) => console.log(error));
+      });
+      function showTable(tableData) {
+        console.log(tableData);
+        let str = "";
+        tableData.forEach((ele) => {
+          str += `<tr>
+                    <td>${ele.id}</td>
+                    <td>${ele.username}</td>
+                    <td>${ele.firstName}${ele.lastName}</td>
+                    <td><i class="fa-solid fa-envelope-circle-check"></i> ${ele.email}</td>
+                    <td>${ele.address.address}, ${ele.address.city}</td>
+                    </tr>`;
+        });
+        document.getElementById("t-data").innerHTML = str;
+      }
+    </script>
+  </body>
+</html>

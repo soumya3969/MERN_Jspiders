@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0776de;
+}
+.stopwatch{
+    width: 300px;
+    height: 90px;
+    background: #cdb99c;
+    margin: 100px auto;
+    padding: 60px 50px 100px;
+    color: #333333;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.time{
+    /* margin-left: -25px; */
+}
+.stopwatch span{
+    margin-top: -20px;
+    background-color: #c7e0f8;
+    color: #0776de;
+    padding: 0 10px 10px 10px;
+    width: 55px;
+    border-radius: 5px;
+    margin: 3px;
+    display: inline-block;
+    /* margin-left: 20px; */
+}
+.btns button{
+    font-size: 22px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #2e80b3;
+    color: #c7e0f8;
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    transition: .3s;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.btns button:hover{
+    background-color: #333333;
+    color: #c7e0f8;
+    cursor: pointer;
+}
