@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Dashboard</title>
+    <!-- !links -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Fonts/css/all.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" style="background-color: #252424">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <i class="fa-solid fa-users-line pe-2"></i>Employee Dashboard
+        </a>
+      </div>
+    </nav>
+    <!-- !login section -->
+    <section class="logInSec" id="logInSec">
+      <div class="container-fluid container-sm">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+            <div class="card m-auto">
+              <div class="card-header text-center bg-dark text-white">
+                <h3>Log In</h3>
+              </div>
+              <div class="card-body">
+                <form action="" id="userDetails">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name=""
+                      id="userName"
+                      placeholder="UserName"
+                      class="form-control"
+                      value=""
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <input
+                      type="password"
+                      name=""
+                      id="password"
+                      placeholder="Password"
+                      class="form-control"
+                      value=""
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <button
+                      type="submit"
+                      value="login"
+                      id="login"
+                      class="btn btn-md btn-dark"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !employee Details Section -->
+    <section id="empDetails">
+      <div class="container-fluid container-sm">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+            <div class="card mt-3">
+              <div class="card-header text-center bg-dark text-white">
+                <h3>Employee Details</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-4 col-sm-4">Name :</div>
+                    <div class="col-xl-8 col-sm-6" id="empName">[User's Name]</div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-4">Desg :</div>
+                    <div class="col-xl-8 col-sm-6" id="empDesg">[User's Designation]</div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-4">Salary :</div>
+                    <div class="col-xl-8 col-sm-6" id="empSalary">[User's Salary]</div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-4">Gender :</div>
+                    <div class="col-xl-8 col-sm-6" id="empGender">[User's Gender]</div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-4">Role :</div>
+                    <div class="col-xl-8 col-sm-6" id="empRole">[User's Role]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Filter section -->
+    <section id="filter">
+        <!-- !Dropdown section -->
+      <div class="dropdowns d-flex justify-content-center mt-5">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filter Here
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#" value="developer">Developer</a></li>
+            <li><a class="dropdown-item" href="#" value="tester">Tester</a></li>
+            <li><a class="dropdown-item" href="#" value="male">Male</a></li>
+            <li><a class="dropdown-item" href="#" value="female">Female</a></li>
+          </ul>
+        </div>
+        <div class="btn btn-dark btn-md ms-2" id="filter" onclick="filter()"> Filter</div>
+      </div>
+
+
+
+      <!-- !filtered employee details details -->
+      <div class="showAllEmpDetails">
+        <div class="container-fluid">
+            <div class="row bg-dark text-white text-center">
+                <div class="col-2 border border-1 border-white">
+                    <h6>ID</h6>
+                </div>
+                <div class="col-2 border border-1 border-white">
+                    <h6>Name</h6>
+                </div>
+                <div class="col-2 border border-1 border-white">
+                    <h6>Desg</h6>
+                </div>
+                <div class="col-2 border border-1 border-white">
+                    <h6>Salary</h6>
+                </div>
+                <div class="col-2 border border-1 border-white">
+                    <h6>Gender</h6>
+                </div>
+                <div class="col-2 border border-1 border-white">
+                    <h6>Role</h6>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Script code  -->
+    <script src="./script.js"></script>
+    <script src="./Bootstrap5/js/bootstrap.bundle.js"></script>
+    <script src="./Fonts/js/all.js"></script>
+  </body>
+</html>
