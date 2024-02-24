@@ -104,25 +104,19 @@
     <!-- !Filter section -->
     <section id="filter">
         <!-- !Dropdown section -->
-      <div class="dropdowns d-flex justify-content-center mt-5">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Filter Here
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#" value="developer">Developer</a></li>
-            <li><a class="dropdown-item" href="#" value="tester">Tester</a></li>
-            <li><a class="dropdown-item" href="#" value="male">Male</a></li>
-            <li><a class="dropdown-item" href="#" value="female">Female</a></li>
-          </ul>
+      <div class="dropdowns d-flex justify-content-center align-items-baseline mt-5 mb-2">
+        <div class="ddCustom form-group mt-3">
+            <select name="city" id="city" class="form-control p-2 h-100">
+                <option class="form-control" value="" disabled>Filter Here</option>
+                <option class="form-control" value="developer">Developer</option>
+                <option class="form-control" value="tester">Tester</option>
+                <option class="form-control" value="male">Male</option>
+                <option class="form-control" value="female">Female</option>
+            </select>
+            
+          </select>
         </div>
-        <div class="btn btn-dark btn-md ms-2" id="filter" onclick="filter()"> Filter</div>
+        <div class="ddCustom btn btn-dark btn-md ms-2" id="filterBtn">Filter</div>
       </div>
 
 
@@ -149,6 +143,9 @@
                 <div class="col-2 border border-1 border-white">
                     <h6>Role</h6>
                 </div>
+            </div>
+            <div class=" empFilterdDetails">
+                
             </div>
         </div>
       </div>
