@@ -107,6 +107,8 @@ login.addEventListener("click", (event) => {
     console.log("Invalid credentials. Please try again.");
     alert("Invalid username or password. Please try again.");
   }
+  if (currentUser.role!=='admin') {
+    filterSec.classList.add("hide");}
 });
 
 // *Filtering functionality
@@ -132,8 +134,8 @@ filterButton.addEventListener("click", () => {
 
 // !Function to display filtered employees
 function displayFilteredEmployees(filteredEmployees) {
-    let empFilterdDetails = document.querySelector(".empFilterdDetails");
-    empFilterdDetails.innerHTML = "";
+    let empFilteredDetails = document.querySelector(".empFilteredDetails");
+    empFilteredDetails.innerHTML = "";
 
     filteredEmployees.forEach(employee => {
         let row = document.createElement("div");
@@ -170,7 +172,7 @@ function displayFilteredEmployees(filteredEmployees) {
         row.appendChild(genderCol);
         row.appendChild(roleCol);
 
-        empFilterdDetails.appendChild(row);
+        empFilteredDetails.appendChild(row);
     });
 }
 
