@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SubString</title>
+  </head>
+  <body>
+    <h1>Substring</h1>
+
+    <!-- !Code -->
+    <script>
+      let str = "malayalam";
+      for (let i = 0; i <= str.length - 2; i++) {
+        for (let j = i + 2; j <= str.length; j++) {
+          // *we can take let j= i+1.
+          let subStr = str.slice(i, j); // here we can give str.slice(i,j+1).
+          //   console.log(subStr);                       // we get the same output.
+          if(revStr(subStr)){
+            console.log(subStr)
+          }
+        }
+      }
+      function revStr(n) {
+        let s = n;
+        let a = 0;
+        let b = n.length - 1;
+        while (a < b) {
+          if (s.charAt(a) != s.charAt(b)) {
+            return false;
+          }
+          a++;
+          b--;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

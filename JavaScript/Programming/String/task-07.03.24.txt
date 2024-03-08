@@ -1,0 +1,9 @@
+>> Remove duplicate character in a given string. { BANANA= BAN}
+>> Find Occurrence of given string
+        {
+            input: BANANA
+            output:B=1
+                   A=3
+                   N=2
+        }
+>> Maximum and minimum occurrence Char in a given String.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <p><pre>
+        5   4   3   2   1 <br>
+            4   3   2   1 <br>
+                3   2   1 <br>
+                    2   1 <br>
+                        1
+    </pre>
+    </p>
+    <script>
+      function threeLoop() {
+        let res = "";
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j < i; j++) {
+            res += "  ";
+          }
+          for (let k = 6-i; k >= 1; k--) {
+            res += k+" ";
+          }
+          res += "\n";
+        }
+        console.log(res);
+      }
+      threeLoop();
+
+
+    </script>
+  </body>
+</html>
