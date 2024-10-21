@@ -1,0 +1,15 @@
+<!-- !Section A  -->
+
+Q1. Print the last 3 Prime Numbers From a given range.
+Q2. Strong Number.
+Q3. Find the smallest Digit in a given Number
+    {
+        input-98345 output 3
+    }
+Q4. 1   2   3   4   5
+        2   3   4   5
+            3   4   5
+                4   5
+                    5
+
+Q5. 0 1 1 2 4 7 13 24 . . . . 

@@ -1,14 +1,17 @@
-const readline = require("readline-sync");
-function test(n) {
-  let sum = 0;
-  while (n > 0) {
-    let rem = n % 10;
-    let product = Math.pow(rem,2);
-    console.log(`${rem} * ${rem} = ${product}`);
-    sum += product;
-    n = Math.trunc(n / 10);
-  }
-  console.log("----------\n"+sum);
+// const readline = require("readline-sync");
+// let Height = +readline.question("Enter Your Height:- ");
+// let Weight = +readline.question("Enter Your Weight:- ");
+
+// if (Height >= 180 && weight >= 60) {
+//   console.log("You are eligible For NCC ");
+// } else {
+//   console.log("You are not eligible For NCC ");
+// }
+
+let a = 5;
+let b = 10;
+
+if (a++ > 5 || b++ < 20) {
+  console.log(a, b); //! a=6,b=11
 }
-let num = +readline.question("Enter a Number:- ");
-test(num);
+console.log(a, b); //! a=6,b=11

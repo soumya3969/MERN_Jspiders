@@ -54,7 +54,7 @@ let allEmp = [
 let loginSec = document.getElementById("logInSec");
 let empDetails = document.getElementById("empDetails");
 let filterSec = document.getElementById("filter");
-
+console.log(loginSec)
 // *Initially hide non-login sections
 empDetails.classList.add("hide");
 filterSec.classList.add("hide");
