@@ -83,6 +83,8 @@ console.log(loggedUser);
 let login = document.getElementById("login");
 login.addEventListener("click", (event) => {
   event.preventDefault();
+  empDetails.classList.add("hide");
+  filterSec.classList.add("hide");
 
   // *Login validation
   let currentUser = allEmp.find(
@@ -124,8 +126,10 @@ filterButton.addEventListener("click", () => {
             return employee.gender === "Male";
         } else if (filterCriteria === "female") {
             return employee.gender === "Female";
+        }else if (filterCriteria === "all") {
+          return true;
         } else {
-            return true;
+            return false;
         }
     });
 
